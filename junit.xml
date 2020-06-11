@@ -1,0 +1,64 @@
+<testsuites name="jest tests" tests="3" failures="3" time="10.923">
+  <testsuite name="undefined" errors="0" failures="3" skipped="0" timestamp="2020-06-11T15:29:13" time="10.923" tests="3">
+    <testcase classname=" Initial UI renders correctly" name=" Initial UI renders correctly" time="0.151">
+      <failure>Error: expect(received).toHaveLength(length)
+
+Expected value to have length:
+  0
+Received:
+  [&lt;li data-testid=&quot;result-row&quot;&gt;Example title&lt;/li&gt;]
+received.length:
+  1
+    at Object.&lt;anonymous&gt;.test (/projects/challenge/src/App.test.js:39:19)
+    at Object.asyncFn (/projects/challenge/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
+    at &lt;anonymous&gt;
+    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    </testcase>
+    <testcase classname=" Test with non existing author" name=" Test with non existing author" time="4.609">
+      <failure>Error: expect(received).toHaveLength(length)
+
+Expected value to have length:
+  0
+Received:
+  [&lt;li data-testid=&quot;result-row&quot;&gt;Example title&lt;/li&gt;]
+received.length:
+  1
+    at /projects/challenge/src/App.test.js:59:21
+    at runExpectation (/projects/challenge/node_modules/wait-for-expect/lib/index.js:49:25)
+    at Timeout.callback [as _onTimeout] (/projects/challenge/node_modules/jsdom/lib/jsdom/browser/Window.js:523:19)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)</failure>
+    </testcase>
+    <testcase classname=" Test with existing author" name=" Test with existing author" time="4.595">
+      <failure>Error: expect(received).toEqual(expected)
+
+Expected value to equal:
+  [&quot;Title 1&quot;, &quot;Some Title 3&quot;, &quot;Title 4&quot;]
+Received:
+  [&quot;Example title&quot;]
+
+Difference:
+
+- Expected
++ Received
+
+Array [
+-  &quot;Title 1&quot;,
+-  &quot;Some Title 3&quot;,
+-  &quot;Title 4&quot;,
++  &quot;Example title&quot;,
+ ]
+    at /projects/challenge/src/App.test.js:89:55
+    at runExpectation (/projects/challenge/node_modules/wait-for-expect/lib/index.js:49:25)
+    at Timeout.callback [as _onTimeout] (/projects/challenge/node_modules/jsdom/lib/jsdom/browser/Window.js:523:19)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
